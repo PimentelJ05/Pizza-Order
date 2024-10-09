@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+
+    <style>
+        body{
+            background-color: seashell
+        }
+
+        fieldset{
+           border-color: tomato;
+           border-radius: 5px;
+           padding: 15px;
+           margin-bottom: 20px;
+        }
+
+        button {
+            font-size: large;
+            background-color:aliceblue;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s, background-color 0.3s, box-shadow 0.3s;
+            position: relative;
+        }
+
+    </style>
+</head>
+
+<body>
+    <form method="get">
+        <h1><font face = "Merriweather">Você selecionou:<font color="red"> Pizza 4 queijos</font></font></h1>
+
+        <fieldset>
+            <legend>Escolha seus opcionais</legend>
+            <div class="row"></div>
+        <p><strong>Quais opcionais você deseja?</strong></p>
+        <input type="checkbox" name = "opcional[]" value = 'queijo'> Acréscimo Queijo <br>
+        <input type="checkbox" name = "opcional[]" value = 'calabresa'> Acréscimo Calabresa <br>
+        <input type="checkbox" name = "opcional[]" value = 'cebola'> Acréscimo Cebola <br>
+        <input type="checkbox" name = "opcional[]" value = 'azeitona'> Acréscimo Azeitona <br>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Escolha a borda</legend>
+            <div class="row"></div>
+        <p><strong>Gostaria de borda recheada?</strong></p>
+        <input type="radio" name="borda" value="sim"> Sim <br>
+        <input type="radio" name="borda" value="nao"> Não <br>
+         </fieldset>
+
+         <fieldset>
+            <legend>Escolha sua bebida</legend>
+            <div class="row"></div>
+        <p><strong>Qual bebida você gostaria?</strong></p>
+        <input type="radio" name="bebida" value="suco"> Suco <br>
+        <input type="radio" name="bebida" value="refrigerante"> Refrigerante <br>
+        <input type="radio" name="bebida" value="agua"> Água <br>
+        <input type="radio" name="bebida" value="nenhum"> Nenhum <br>
+        </fieldset>
+        <button type="submit" id="enviar">Enviar Pedido</button>
+
+ 
+    </form>
+</body>
+</html>
