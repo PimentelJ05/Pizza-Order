@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peça Sua Pizza</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="menu">
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul id="menuOptions">
+            <li><a href="https://pizzalovessauce.com/plsmenu">Nosso Menu</a></li>
+            <li><a href="https://pizzalovessauce.com/">Nossa História</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <form method="get">
+            <h1><font face="Merriweather">Você selecionou:<font color="red"> Pizza 4 queijos🍕</font></font></h1>
+
+            <fieldset id="escolha-opcionais">
+                <legend>Escolha seus opcionais</legend>
+                <div class="opcionais"></div>
+                <p><strong>Quais opcionais você deseja?</strong></p>
+                <input type="checkbox" name="opcional[]" value='queijo'> Acréscimo Queijo <br>
+                <input type="checkbox" name="opcional[]" value='calabresa'> Acréscimo Calabresa <br>
+                <input type="checkbox" name="opcional[]" value='cebola'> Acréscimo Cebola <br>
+                <input type="checkbox" name="opcional[]" value='azeitona'> Acréscimo Azeitona <br>
+            </fieldset>
+
+            <fieldset id="escolha-borda">
+                <legend>Escolha a borda</legend>
+                <div id="borda"></div>
+                <p><strong>Gostaria de borda recheada?</strong></p>
+                <select name="role">
+                    <option value="">Selecione uma opção</option>
+                    <option value="sim" id="sim">Sim</option>
+                    <option value="nao" id="nao">Não</option>
+                </select>
+            </fieldset>
+
+            <fieldset id="escolha-bebida">
+                <legend>Escolha sua bebida</legend>
+                <div id="bebida"></div>
+                <p><strong>Qual bebida você gostaria?</strong></p>
+                <input type="radio" name="bebida" value="suco"> Suco <br>
+                <input type="radio" name="bebida" value="refrigerante"> Refrigerante <br>
+                <input type="radio" name="bebida" value="agua"> Água <br>
+                <input type="radio" name="bebida" value="nenhum"> Nenhum <br>
+            </fieldset>
+            
+            <button type="submit" id="enviar">Enviar Pedido</button>
+        </form>
+    </div>
+
+    <script>
+        // JavaScript para mostrar o menu
+        document.getElementById('menuToggle').onclick = function() {
+            const menuOptions = document.getElementById('menuOptions');
+            if (menuOptions.style.display === 'none' || menuOptions.style.display === '') {
+                menuOptions.style.display = 'block'; // Mostra as opções do menu
+            } else {
+                menuOptions.style.display = 'none'; // Oculta as opções do menu
+            }
+        };
+    </script>
+</body>
+</html>
