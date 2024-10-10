@@ -1,0 +1,95 @@
+
+body {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    margin: 0; 
+    font-family: Arial, sans-serif;
+    background-color: seashell; 
+}
+
+.menu {
+    position: fixed;
+    top: 20px; 
+    left: 20px; 
+    background-color:rgb(238, 202, 196); 
+    border-radius: 8px; 
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+    z-index: 1000; 
+    transition: width 0.3s; 
+    width: 100px; 
+    overflow: hidden; 
+}
+
+.menu-toggle {
+    cursor: pointer; 
+    padding: 10px; 
+    display: flex; 
+    flex-direction: column; 
+}
+
+.menu-toggle span {
+    display: block; 
+    height: 4px; 
+    width: 30px; 
+    background: black; 
+    margin: 5px 0; 
+    transition: all 0.3s ease; 
+}
+
+#menuOptions {
+    list-style-type: none; 
+    padding: 0; 
+    display: none; 
+}
+
+.menu a {
+    text-decoration: none; 
+    color: black; 
+    font-weight: bold; 
+    transition: background-color 0.3s; 
+    display: block; 
+    padding: 10px; 
+}
+
+.menu a:hover {
+    background-color: #e0e0e0; 
+}
+
+
+.content {
+    text-align: center; 
+}
+
+
+fieldset {
+    border-color: tomato;
+    border-radius: 20px;
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 300px; 
+}
+
+
+button {
+    font-size: large;
+    background-color: aliceblue;
+    border-radius: 64px;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, background-color 0.3s, box-shadow 0.3s;
+    width: 128px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.map-container {
+    display: none; 
+    margin-top: 20px; 
+}
